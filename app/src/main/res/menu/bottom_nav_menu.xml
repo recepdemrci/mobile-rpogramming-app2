@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/activity_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/activity_closet"
+        android:icon="@drawable/ic_closet_24"
+        android:title="Closet" />
+
+    <item
+        android:id="@+id/activity_outfit"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Outfits" />
+
+</menu>

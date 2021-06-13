@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/send_button"
+                android:layout_width="66dp"
+                android:layout_height="56dp"
+                android:onClick="onSendClick"
+                android:src="@drawable/ic_send_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.253"
+                app:layout_constraintStart_toEndOf="@+id/delete_button"
+                app:layout_constraintTop_toBottomOf="@+id/shoe_image"
+                app:layout_constraintVertical_bias="0.508"
+                app:tint="@color/background"
+                android:backgroundTint="@color/white"/>
+
+            <ImageView
+                android:id="@+id/overhead_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toStartOf="@+id/face_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/top_image"
+                android:src="@drawable/overhead"/>
+
+            <ImageView
+                android:id="@+id/face_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/overhead_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bottom_image"
+                android:src="@drawable/face"/>
+
+            <ImageView
+                android:id="@+id/top_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/overhead_image"
+                app:layout_constraintEnd_toStartOf="@+id/bottom_image"
+                app:layout_constraintBottom_toTopOf="@id/shoe_image"
+                android:src="@drawable/top"/>
+
+            <ImageView
+                android:id="@+id/bottom_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/face_image"
+                app:layout_constraintStart_toEndOf="@+id/top_image"
+                app:layout_constraintBottom_toTopOf="@id/shoe_image"
+                android:src="@drawable/bottom"/>
+
+            <ImageView
+                android:id="@+id/shoe_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@id/delete_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/top_image"
+                android:src="@drawable/shoes" />
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/delete_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="onDeleteClick"
+                android:text="DELETE"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                app:backgroundTint="@android:color/white"
+                app:icon="@drawable/ic_delete_28"
+                app:iconTint="@android:color/holo_red_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.268"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shoe_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
